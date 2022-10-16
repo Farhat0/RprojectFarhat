@@ -14,7 +14,7 @@ pieChart1=pieChart+geom_col()+
   coord_polar(theta = "y")+
   theme_void()+
   theme(plot.title = element_text(colour = "black",
-                                  size = 14, 
+                                  size = 8, 
                                   face = "bold", 
                                   hjust = .5))+
   ggtitle('Age Group Distribution of Participants')+
@@ -22,5 +22,5 @@ pieChart1=pieChart+geom_col()+
             position = position_stack(vjust = .5))+
   scale_fill_manual(values = c('#993399', '#CC99CC','#FFCCFF'))
 pieChart1
- ggsave('AgeGroupPieChart.png')
+ ggsave('pieChart.png')
 
